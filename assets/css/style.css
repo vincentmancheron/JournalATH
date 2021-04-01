@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: tan
+}
+
+
+div,
+fieldset,
+header,
+main,
+footer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+fieldset {
+    background-color: lightsalmon;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 50px;
+    width: 50px
+}
+
+.disclaimer {
+    font-style: italic;
+    font-size: x-small;
+}
+
+.bandeau {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#kennys {
+    height: 200px;
+    width: 300px
+}
+
+#maillot1 {
+    text-align: center;
+}
+
+#maillot2 img {
+    height: 450px;
+    width: 45%
+}
+
+#lmn8 {
+    text-align: center;
+}
+
+#lmn8 img {
+    width: 75px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+#ventre {
+    width: 50%
+}
+
+.soustribune {
+    width: 22%;
+}
+
+#icone img {
+    height: 20px;
+    width: 20px
+}
+
+.results {
+    width: 100%
+}
+
+.partenaires {
+    width: 50%;
+    margin-left: 50px
+}
+
+.partenaires img {
+    height: 50px;
+    width: 75px;
+    margin-left: 5px
+}
+
+
+#lmn8b {
+    width: 75px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.reseaux {
+    width: 50;
+    margin-left: 650px
+}
+
+.reseaux img {
+    height: 50px;
+    width: 50px;
+    padding-left: 5px;
+    padding-right: 5px
+}
