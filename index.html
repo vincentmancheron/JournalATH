@@ -8,27 +8,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Une - La gazette eSport ATH</title>
 </head>
-<!-- Si tu vois ce message Thierry, j'aimerais qu'on voit tout les deux s'il y'a des manières d'améliorer ou de simplifier l'ensemble du code.
-Je pense que je suis passé à coté en ce qui concerne l'utilisation des flexbox. -->
+
 <body>
     <header>
         <div class="disclaimer">
             <p>DISCLAIMER: Cette Une de journal est un exercice d'étudiant et en aucun cas une version officielle
-                émise par la structure. Je ne suis pas journaliste professionnelle et n'ai pas travaillé mes infos avant
-                de
-                rédiger cette page.
-                Ceci est un travail de débutant en dévellopement Web, merci d'être indulgent !
-                Les partenariats (sauf LMN8) n'existent pas en réalité.</p>
+                émise par la structure.
+                Je ne suis pas journaliste professionnelle et n'ai pas travaillé sérieusement mes infos avant
+                de rédiger cette page.<br>
+                Les partenariats avec ATH (sauf pour LMN8) affichés en bas de page n'existent pas en réalité.
+                Ceci est un travail de débutant en dévellopement Web, merci d'être indulgent !</p>
         </div>
         <div>
             <!-- Je n'arrive pas à centrer le bandeau et à agrandir l'image sans détruire la structure globale.-->
             <div class="bandeau">
                 <img src="assets/img/logoath_c.jpg" alt="Logo Ath_Community"></div>
             <div class="bandeau">
-                <h1>News ATH</h1>
+                <h1>ATH News</h1>
             </div>
             <div class="bandeau">
-                <h2>Le journal de la structure ATH traitant l'actualité eSport</h2>
+                <h2>Le journal de la structure ATH traitant de l'actualité eSport</h2>
             </div>
         </div>
     </header>
@@ -47,12 +46,16 @@ Je pense que je suis passé à coté en ce qui concerne l'utilisation des flexbo
         </fieldset>
         <!-- Je n'arrive pas à mettre les photos des maillots côte à côte. -->
         <fieldset id="maillot1">
-            <figure id="maillot2">
-                <img src="assets/img/maillotjoueur.jpg" alt="Maillot Joueurs">
-                <figcaption>Maillot Joueurs</figcaption>
-                <img src="assets/img/maillotstaff.jpg" alt="Maillot Staffs">
-                <figcaption>Maillot Staffs</figcaption>
-            </figure>
+            <div id="maillot2" class="flex">
+                <figure>
+                    <img src="assets/img/maillotjoueur.jpg" alt="Maillot Joueurs">
+                    <figcaption>Maillot Joueurs</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/maillotstaff.jpg" alt="Maillot Staffs">
+                    <figcaption>Maillot Staffs</figcaption>
+                </figure>
+            </div>
             <div id="lmn8">
                 <!-- Je n'arrive pas à centrer la phrase ci-dessous. -->
                 <h3>Le partenariat avec <a href="https://eliminate.fr/" target="_blank"><img
@@ -60,71 +63,90 @@ Je pense que je suis passé à coté en ce qui concerne l'utilisation des flexbo
                     maillots sera bientôt disponible à l'achat !</h3>
             </div>
         </fieldset>
-        <div>
-            <fieldset class="soustribune">
+        <div class="flex">
+            <fieldset class="soustribune" id="c9">
                 <legend><img src="assets/img/logocloud9.jpg" alt="Logo Cloud9"></legend>
                 <h4>CS:GO et Cloud9: c'est fini !</h4>
                 <p>La structure américaine vient d'annoncer l'arrêt de sa section sur Counter Strike: Global Offensive
-                    et
-                    libère
-                    donc ses joueurs.<br>
+                    et libère donc ses joueurs.<br>
                     C'est plus de 4 millions de dollars investis dans les frais salariaux et de transferts des joueurs
-                    qui
-                    partent en fumée!<br>
+                    qui partent en fumée!<br>
                     La structure justifie cet échec par l'impact du Covid sur l'économie global de CS:GO, propos qui ne
-                    semblent
-                    pas convaincre tout
-                    le monde, nottament le chroniqueur Malek_CSGO qui parle d'une suite logique suite aux performances
-                    décevantes de l'équipe associé un mauvaise gestion marketing.<br>
+                    semblent pas convaincre tout le monde, nottament le chroniqueur Malek_CSGO qui parle d'une suite
+                    logique dû aux performances décevantes de l'équipe associé un mauvaise gestion marketing.<br>
                     C'est un enième split d'équipe pour les Etats-Unis qui voit sa scène professionnelle CS:GO
-                    disparaitre
-                    suite
-                    au succès de Valorant sur le continent nord-américain.</p>
+                    disparaitre suite au succès de Valorant sur le continent nord-américain.</p>
             </fieldset>
             <fieldset id="ventre">
                 <h3>Les actualités de nos équipes:</h3>
-                <p><strong>Fortnite:</strong> A venir</p>
-                <p><strong>Rocket League:</strong> A venir</p>
-                <p><strong>Valorant:</strong> A venir</p>
+                <p><strong>Fortnite:</strong> L'équipe mené par Kazouw ont réussi la performance de se qualifier pour
+                    les EBS sur un magnifique Top15 !<br>
+                    Ils participent en ce moment à la coupe Tracker x ATH, organisé donc par notre structure
+                    (1500 euros de cashprize). Nous restons en attente de la communication des résultats.<br>
+                    Nous leur souhaitons bonne chance pour continuer à performer et à s'améliorer en vue des prochains
+                    FNCS.</p>
+                <p><strong>Rocket League:</strong> Le roaster finissait sa saison 2021 sur une série de succès,
+                    nottament celle aux RBRS.<br>
+                    Le début d'année 2021 est plus calme en termes d'écheances esportives ce qui laisse le temps à notre
+                    trio de step up en vue des qualifiers majeurs qui arriveront en fin d'année scolaire.</p>
+                <p><strong>Valorant:</strong> Notre roaster Valorant continue son évolution dans l'ombre.<br>
+                    Malgrè des changements récents au sein de la line up et grâce à l'arrivée du nouveau manager Jham,
+                    l'équipe parvient à écraser ses adversaires sur des tournois communautaires.<br>
+                    Valorant étant encore un "nouveau jeu", la structuration des grandes compétitions se fait attendre
+                    mais ne devrait plus trop tarder.<br>
+                    Nous souhaitons à notre roaster de continuer d'être régulier et motivé dans leur investissement en
+                    vue des prochaines échéances !</p>
                 <p><strong>CS:GO:</strong> Malgrè le split récent l'équipe Esport suite à la déconvenue lors de la KRL
-                    Cup,
-                    la
-                    section CS:GO continue de vivre menée par Diabololink, le manager et Oxwig, le nouveau
+                    Cup, la section CS:GO continue de vivre menée par Diabololink, le manager et Oxwig, le nouveau
                     capitaine.<br>
                     La recherche de joueurs est désormais terminé et l'officialisation de trois nouveaux joueurs en
-                    période
-                    de
-                    test devrait être annoncé d'ici peu.<br>
+                    période de test devrait être annoncé d'ici peu.<br>
                     Les objectifs changent par rapport à l'ancienne équipe : pas d'inscription prévue pour la saison 37
-                    des
-                    Opens ESEA mais une volonté de prendre son temps pour mettre en place l'équipe.<br>
+                    des Opens ESEA mais une volonté de prendre son temps pour mettre en place l'équipe.<br>
                     Nous participerons, à court-terme, à des cups FaceIt et/ou ESL, à moyen-terme, à différents
-                    qualifiers
-                    pour
-                    des tournois les plus quotés possibles et enfin, à long-terme, à la saison 38 des Opens ESEA.
+                    qualifiers pour des tournois les plus quotés possibles et enfin, à long-terme, à la saison 38 des
+                    Opens ESEA.
                 </p>
             </fieldset>
-            <fieldset class="soustribune">
+            <fieldset class="soustribune" id="lec">
                 <legend><img src="assets/img/logolec.png" alt="Logo LEC"></legend>
                 <div id="icone">
                     <h4>LoL LEC - Résultats Playoffs Round1</h4>
-                    <div class="results">26 mars 2021 à 18h:&emsp;<img src="assets/img/logofnatic.png"
-                            alt="Logo FNC">FNC 3-1 SK<img src="assets/img/logosk.png" alt="Logo SK"></div>
-                    <div class="results">27 mars 2021 à 17h:&emsp;<img src="assets/img/logog2.png" alt="Logo G2">G2 3-2
-                        SO4<img src="assets/img/logos04.png" alt="Logo S04"></div>
-                    <div class="results">28 mars 2021 à 17h:&emsp;<img src="assets/img/logorge.png" alt="Logo RGE">RGE
-                        1-3 MAD<img src="assets/img/logolions.png" alt="Logo MAD"></div>
-                    <h4>Prochains matchs:</h4> 
-                    <!-- Pas encore fait. -->
-                    <div class="results"><img src=alt="">G2 3-2 SO4<img src=alt=""></div>
-                    <div class="results"><img src=alt="">RGE 1-3 MAD<img src=alt=""></div>
-                    <div class="results"><img src=alt="">FNC 3-1 SK<img src=alt=""></div>
+                    <ul>
+                        <li>
+                            <div>26 mars 2021 à 18h:&emsp;<img src="assets/img/logofnatic.png" alt="Logo FNC">FNC 3-1
+                                SK<img src="assets/img/logosk.png" alt="Logo SK"></div>
+                        </li>
+                        <li>
+                            <div>27 mars 2021 à 17h:&emsp;<img src="assets/img/logog2.png" alt="Logo G2">G2 3-2
+                                S04<img src="assets/img/logos04.png" alt="Logo S04"></div>
+                        </li>
+                        <li>
+                            <div>28 mars 2021 à 17h:&emsp;<img src="assets/img/logorge.png" alt="Logo RGE">RGE
+                                1-3 MAD<img src="assets/img/logolions.png" alt="Logo MAD"></div>
+                        </li>
+                    </ul>
+                    <h4>Prochains matchs:</h4>
+                    <ul>
+                        <li>
+                            <div>02 avril 2021 à 18h:&emsp;<img src="assets/img/logos04.png" alt="Logo S04">S04 -
+                                FNC<img src="assets/img/logofnatic.png" alt="Logo FNC"></div>
+                        </li>
+                        <li>
+                            <div>03 avril 2021 à 17h:&emsp;<img src="assets/img/logog2.png" alt="Logo G2">G2 - MAD<img
+                                    src="assets/img/logolions.png" alt="Logo MAD"></div>
+                        </li>
+                        <li>
+                            <div>04 avril 2021 à 17h:&emsp;<img src="assets/img/logorge.png" alt="Logo RGE">RGE -
+                                TBD<img src="assets/img/pointdinterrogation.jpg" alt="To be defined"></div>
+                        </li>
+                    </ul>
                 </div>
             </fieldset>
         </div>
     </main>
     <footer>
-        <div>
+        <div class="flex">
             <div class=partenaires>
                 <h5>Nos partenaires:</h5>
                 <a href="https://www.redbull.com/fr-fr/" target="_blank"><img src="assets/img/logoredbull.jpg"
@@ -147,10 +169,11 @@ Je pense que je suis passé à coté en ce qui concerne l'utilisation des flexbo
         </div>
         <div class="disclaimer">
             <p>DISCLAIMER: Cette Une de journal est un exercice d'étudiant et en aucun cas une version officielle
-                émise par la structure. Je ne suis pas journaliste professionnelle et n'ai pas travaillé mes infos avant
-                de rédiger cette page.
-                Ceci est un travail de débutant en dévellopement Web, merci d'être indulgent !
-                Les partenariats (sauf LMN8) n'existent pas en réalité.</p>
+                émise par la structure.
+                Je ne suis pas journaliste professionnelle et n'ai pas travaillé sérieusement mes infos avant
+                de rédiger cette page.<br>
+                Les partenariats avec ATH (sauf pour LMN8) affichés en bas de page n'existent pas en réalité.
+                Ceci est un travail de débutant en dévellopement Web, merci d'être indulgent !</p>
         </div>
     </footer>
 </body>

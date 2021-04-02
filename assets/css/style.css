@@ -3,7 +3,6 @@ body {
     background-color: tan
 }
 
-
 div,
 fieldset,
 header,
@@ -15,17 +14,6 @@ footer {
 
 fieldset {
     background-color: lightsalmon;
-}
-
-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-img {
-    height: 50px;
-    width: 50px
 }
 
 .disclaimer {
@@ -52,7 +40,10 @@ img {
 
 #maillot2 img {
     height: 450px;
-    width: 45%
+}
+
+.flex {
+    display: flex;
 }
 
 #lmn8 {
@@ -60,6 +51,7 @@ img {
 }
 
 #lmn8 img {
+    height: 50px;
     width: 75px;
     margin-left: 5px;
     margin-right: 5px
@@ -73,13 +65,19 @@ img {
     width: 22%;
 }
 
+#c9 img {
+    height: 150px;
+    width: 200px
+}
+
+#lec img {
+    height: 150px;
+    width: 150px
+}
+
 #icone img {
     height: 20px;
     width: 20px
-}
-
-.results {
-    width: 100%
 }
 
 .partenaires {
@@ -92,7 +90,6 @@ img {
     width: 75px;
     margin-left: 5px
 }
-
 
 #lmn8b {
     width: 75px;
