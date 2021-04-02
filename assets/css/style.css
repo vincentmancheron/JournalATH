@@ -31,7 +31,19 @@ fieldset {
 
 #kennys {
     height: 200px;
-    width: 300px
+    width: 300px;
+    border-radius: 300px;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+.container {
+    border: 1px solid black;
+    background-color: lightsalmon;
+    padding-left: 10px;
+    padding-right: 10px
 }
 
 #maillot1 {
@@ -40,6 +52,8 @@ fieldset {
 
 #maillot2 img {
     height: 450px;
+    border-radius: 250px;
+    padding-left: 40px;
 }
 
 .flex {
@@ -67,7 +81,8 @@ fieldset {
 
 #c9 img {
     height: 150px;
-    width: 200px
+    width: 200px;
+    border-radius: 100px;
 }
 
 #lec img {
